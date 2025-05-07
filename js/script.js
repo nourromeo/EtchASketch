@@ -18,13 +18,14 @@ $(function () {
       else if (event.key === "ArrowRight") x += steg;
       else return;
   
+      ctx.strokeStyle = "black";
       ctx.lineTo(x, y);
       ctx.stroke();
   
       // Rita markören
       ctx.beginPath();
       ctx.arc(x, y, 3, 0, Math.PI * 2);
-      ctx.fillStyle = "black";
+      ctx.fillStyle = "red";
       ctx.fill();
     });
   
